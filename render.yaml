@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: tg-relay
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.mjs
+    envVars:
+      - key: AUTH_TOKEN
+        value: tg-relay-2024-secure
+      - key: PORT
+        value: 8080
+    plan: free

@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    env_vars:
+      - key: AUTH_TOKEN
+        value: tg-relay-2024-secure
+      - key: PORT
+        value: 8080
